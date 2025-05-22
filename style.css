@@ -1,0 +1,50 @@
+/* Wrapper to hold multiple cards horizontally */
+.maincard {
+  display: flex;              /* Enables flexbox layout */
+  flex-direction: row;        /* Arrange items horizontally */
+  justify-content: center;/* Align items to the start (left) */
+  flex-wrap: wrap;            /* Allow wrapping to next line if needed */
+  gap: 20px;                  /* Space between cards */
+  padding: 20px; 
+}
+
+/* Main card styling */
+.card {
+  background-color: white;
+  color: #333;
+  width: 300px;
+  height: 450px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Title section */
+.tytle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Body content */
+.body {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+/* Tags section */
+.tags {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* Like/Dislike and User ID section */
+#like-dislike,
+#userid {
+  font-size: 12px;
+  color: #555;
+}
